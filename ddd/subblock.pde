@@ -26,6 +26,20 @@ class GrassBlock extends Block {
   }
 }
 
+class DirtBlock extends Block {
+  DirtBlock(float x, float y, float z, float size) {
+    super(x, y, z, size);
+    super.setTexture(
+      _loadImage("data/blocks/grass/grassD.png"),
+      _loadImage("data/blocks/grass/grassD.png"),
+      _loadImage("data/blocks/grass/grassD.png"),
+      _loadImage("data/blocks/grass/grassD.png"),
+      _loadImage("data/blocks/grass/grassD.png"),
+      _loadImage("data/blocks/grass/grassD.png")
+    );
+  }
+}
+
 PImage _loadImage(String imgPath) {
   return loadImage(imgPath);
 }
